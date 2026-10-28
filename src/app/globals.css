@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #f7f1ea;
+  --color-sage: #cdd5c0;
+  --color-sage-deep: #7f9270;
+  --color-sand: #e9dccb;
+  --color-ink: #202020;
+  --color-moss: #2a372b;
+  --color-mute: #6b6460;
+  --color-cherry: #a51c30;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+/* Kare/dikdörtgen dili: hiçbir form elemanı yuvarlak köşe almaz */
+input,
+select,
+textarea,
+button {
+  border-radius: 0;
+}
+
+::selection {
+  background: var(--color-sage);
+}
